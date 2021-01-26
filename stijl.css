@@ -98,3 +98,24 @@ nav ul li:first-of-type{
 
 }
 
+/* main / kwaliteiten */
+
+.kwaliteiten{
+	position: absolute;
+	background-color: #B9CBCB;
+	width: 100%;
+	height: 15em;
+	top: 40em;
+}
+
+/* main / werk */
+
+.werk{
+	position: absolute;
+	background-color: #F5EEE4;
+	width: 100%;
+	height: 20em;
+	top: 55em;
+}
+
+
