@@ -1,0 +1,140 @@
+
+/* Hele document */
+
+*, *::after, *::before {
+	padding: 0;
+	margin: 0;
+  	box-sizing:border-box;  
+}
+
+html, body {
+  position: relative;
+}
+
+body{
+	background-color: #F5EEE4;
+}
+
+/* Boven gedeelte */
+
+/*header{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+header h2{
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.5em;
+}*/
+
+nav{
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-size: 1.7em;
+	position: absolute;
+	right: 3em;
+	top: 1em;
+}
+
+nav ul li{
+	display: inline;
+}
+
+nav ul li:first-of-type{
+	margin-right: 2em;
+}
+
+.info{
+	position: absolute;
+	background-color: #B9CBCB;
+	width: 40%;
+	height: 30em;
+	left: 11.5em;
+	top: 12em;
+	z-index: 10;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.info h2{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 3.5em;
+	font-weight: 700;
+	position:absolute;
+	top: -1.15em;
+	left: 0.3em;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+
+}
+
+.info h2 span{
+	color: black;
+	text-shadow: none;
+}
+
+.info p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	position: absolute;
+	top: 6em;
+	left: 1.2em;
+	width: 80%;
+	font-size: 1.2em;
+}
+
+.info button{
+	position: absolute;
+	top: 30em;
+	left: 9em;
+	width: 50%;
+	height: 4em;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.info button h3{
+	font-size: 1.5em;
+}
+
+.fotomezelf{
+	position: absolute;
+	background-color: grey;
+	width: 36%;
+	height: 20em;
+	left: 37.5em;
+	top: 8em;
+	z-index: 1;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.fotomezelf img{
+	width: 100%;
+	filter:brightness(120%);
+
+}
+/* Kwaliteiten */
+
+.kwaliteiten{
+	position: absolute;
+	background-color: #B9CBCB;
+	width: 100%;
+	height: 15em;
+	top: 45em;
+}
+
+/* Werk */
+
+.werk{
+	position: absolute;
+	background-color: #F5EEE4;
+	width: 100%;
+	height: 20em;
+	top: 70em;
+}
+
+
