@@ -110,12 +110,42 @@ nav ul li:first-of-type{
 
 /* main / werk */
 
-.werk{
+.container{
 	position: absolute;
 	background-color: #F5EEE4;
 	width: 100%;
-	height: 20em;
-	top: 55em;
+	height: 50em;
+	top: 60em;
 }
+
+.werk{
+	display: grid;
+	width: 90%;
+	height: 90%;
+	grid-template-columns: repeat(3, 1fr);
+  	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 15px;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.werk-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+	background-blend-mode: multiply;
+	background-image: url(images/placeholder.png);
+	background-size: cover;
+	color: white;
+	background-position: center;
+	transition: all ease-in-out 300ms;
+}
+
+.werk-item:hover{
+	background-blend-mode: initial;
+	color: black;
+}
+
 
 
