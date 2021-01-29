@@ -12,9 +12,10 @@ html, body {
 
 body{
 	background-color: #F5EEE4;
+	height: 100%;
 }
 
-/* Boven gedeelte */
+/* Boven gedeelte / mobiel */
 
 header h2{
 	font-family: 'Lora', serif;
@@ -41,7 +42,7 @@ nav ul li:first-of-type{
 	margin-right: 2em;
 }
 
-/* main / about me */
+/* main / about me / mobiel */
 
 .info{
 	position: absolute;
@@ -86,7 +87,7 @@ nav ul li:first-of-type{
 	position: absolute;
 	width: 45%;
 	height: 9em;
-	left: 11.5em;
+	left: 9.8em;
 	top: 7.5em;
 	z-index: 1;
 	box-shadow: 5px 5px 10px grey;
@@ -108,7 +109,7 @@ nav ul li:first-of-type{
 	top: 40em;
 }
 
-/* main / werk */
+/* main / werk / desktop */
 
 .container{
 	position: absolute;
@@ -116,6 +117,14 @@ nav ul li:first-of-type{
 	width: 100%;
 	height: 50em;
 	top: 60em;
+}
+
+.container h2{
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	font-size: 2.3em;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .werk{
@@ -142,10 +151,60 @@ nav ul li:first-of-type{
 	transition: all ease-in-out 300ms;
 }
 
+.werk-item.hide{
+	display: none;
+}
+
+.werk-item.show{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .werk-item:hover{
 	background-blend-mode: initial;
 	color: black;
 }
+
+.paginanummers{
+	position: absolute;
+	right: 5em;
+	margin-top: 1em;
+}
+
+.paginanummers li{
+	display: inline;
+}
+
+.paginanummers button{
+	border: none;
+  	outline: none;
+  	padding: 10px 16px;
+  	background-color: #B9CBCB;
+  	cursor: pointer;
+  	font-size: 1.1em;
+}
+
+.paginanummers li:first-of-type{
+	margin-right: 1em;
+}
+
+.pagenumber1.disabled, .pagenumber2.disabled{
+	background-color: #E8E8E8;
+	pointer-events: none;
+}
+
+
+/* footer / desktop */
+
+footer{
+	background-color: black;
+	height: 20em;
+	width: 100%;
+	position: absolute;
+	top: 120em;
+}
+
 
 
 
