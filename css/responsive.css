@@ -1,0 +1,17 @@
+@media (min-width: 414px) and (max-width: 736px){
+
+	.werk{
+	width: 90%;
+	height: 100%;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 15px;
+	margin: 0px auto;
+	margin-top: 20px;
+	}
+
+	.container {
+		top: 56em;
+	}
+
+}
