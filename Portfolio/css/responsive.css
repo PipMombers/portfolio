@@ -1,0 +1,63 @@
+@media (min-width: 375px) and (max-width: 812px){
+
+	.header{
+		visibility: hidden;
+
+	}
+
+	.header h2{
+		visibility: hidden;
+	}
+
+	nav ul{
+		visibility: hidden;
+	}
+
+	nav ul a{
+		visibility: hidden;
+	}
+
+	nav ul a:first-of-type{
+		visibility: hidden;
+	}
+
+	nav ul a:nth-of-type(2){
+		visibility: hidden;
+	}
+
+	nav ul a:last-of-type{
+		visibility: hidden;
+	}
+
+	/* main / about me  */
+
+	.achtergrond{
+		background-image: url(../images/achtergrondmobiel.png);
+		background-size: cover;
+		width: 100%;
+		height: 29.5em;
+	}
+
+	.achtergrond img{
+		visibility: hidden;
+	}
+
+	.informatie h2{
+		visibility: hidden;
+	}
+
+	.informatie p{
+		visibility: hidden;
+	}
+
+	.informatie button{
+		visibility: hidden;
+	}
+
+	.container{
+	visibility: hidden;
+	}
+
+}
+
+
