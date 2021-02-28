@@ -125,6 +125,18 @@ nav ul a:last-of-type{
 	right: 14.5em;
 	top: 27em;
 	background-color: #F4521D;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px grey;
+	color: white;
+}
+
+.informatie button:hover{
+	box-shadow: 2px 2px 5px grey inset;
+	background-color: #F4BE2B;
+}
+
+.informatie button:focus{
+	outline-width: 0;
 }
 
 
