@@ -45,31 +45,27 @@ body{
 	font-size: 2.3em;
 	text-align: center;
 	margin-top: 0.15em;
+}
+
+.header h2 a{
+	text-decoration: none;
 	color: #142F3E;
+	cursor: pointer;
 }
 
 nav ul{
 	position: absolute;
-	right: 3.5em;
+	right: 2.5em;
 	top: 0.65em;
 	color: #142F3E;
 }
 
-nav ul a{
+nav ul li{
 	display: inline;
 	font-family: 'Fraunces', serif;
 	font-weight: 600;
 	font-size: 1.7em;
-}
-
-nav ul a:first-of-type{
-	margin-right: 2em;
-	color: #142F3E;
-	text-decoration: none;
-}
-
-nav ul a:nth-of-type(2){
-	margin-right: 2em;
+	padding: 0 1.5em;
 }
 
 nav ul a:last-of-type{
@@ -77,65 +73,74 @@ nav ul a:last-of-type{
 	text-decoration: none;
 }
 
+nav ul a:hover{
+	color: #F4521D;
+	text-decoration: underline;
+}
+
 /* main / about me  */
 
 .achtergrond{
 	position: absolute;
-	left: 0;
+	left: -8.5em;
+	top: -8em;
 	z-index: 1;
 }
 
 .achtergrond img{
-	width: 80%;
+	width: 70%;
+}
+
+.informatie{
+	position: absolute;
+	width: 40%;
+	right: 4.6em;
+	top: 10em;
+	z-index: 30;
 }
 
 .informatie h2{
-	position: absolute;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-size: 3.5em;
-	right: 3em;
-	top: 2em;
 	z-index: 30;
 	color: #142F3E;
 	font-weight: 700;
 }
 
 .informatie p{
-	position: absolute;
-	width: 35%;
+	width: 85%;
 	font-size: 1.1em;
 	font-family: 'Raleway', sans-serif;
-	right: 6.3em;
-	top: 15em;
 	z-index: 30;
 	color: #142F3E;
 	font-weight: 600;
+	margin-top: 1.5em;
+	margin-bottom: 3em;
 }
 
-.informatie button{
-	position: absolute;
+.informatie a{
 	z-index: 30;
 	font-size: 1.3em;
-	padding: 1.2em;
-	width: 20%;
+	padding: 1em 3em;
+	width: 25%;
 	border: none;
 	border-radius: 0.8em;
 	font-family: 'Raleway', sans-serif;
-	right: 14.5em;
-	top: 27em;
 	background-color: #F4521D;
 	cursor: pointer;
 	box-shadow: 5px 5px 5px grey;
 	color: white;
+	text-align: center;
+	text-decoration: none;
 }
 
-.informatie button:hover{
+.informatie a:hover{
 	box-shadow: 2px 2px 5px grey inset;
-	background-color: #F4BE2B;
+	background-color: #e6c23a;
 }
 
-.informatie button:focus{
+.informatie a:focus{
 	outline-width: 0;
 }
 
@@ -145,7 +150,7 @@ nav ul a:last-of-type{
 
 .kwaliteiten{
 	position: absolute;
-	background-color: #F4BE2B;
+	background-color: #e6c23a;
 	width: 100%;
 	height: 18em;
 	top: 45em;
@@ -249,12 +254,8 @@ nav ul a:last-of-type{
 	background-image: url(../images/sys.jpg);
 }
 
-.werk-item:nth-of-type(13){
-	background-image: url(../images/wijn.jpg);
-}
-
 .werk-item:last-of-type{
-	background-image: url(../images/beyond.jpg);
+	background-image: url(../images/wijn.jpg);
 }
 
 
@@ -348,10 +349,33 @@ nav ul a:last-of-type{
 
 footer{
 	background-color: #CADCE5;
-	height: 15em;
+	height: 10em;
 	width: 100%;
 	position: absolute;
 	top: 110em;
+}
+
+footer h2{
+	font-family: 'Fraunces', serif;
+	text-transform: uppercase;
+	font-size: 2.3em;
+	text-align: center;
+	margin-top: 0.4em;
+}
+
+footer h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+footer h3:first-of-type{
+	margin-top: 0.8em;
+}
+
+footer a{
+	color: #F4521D;
 }
 
 

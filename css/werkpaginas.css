@@ -6,80 +6,124 @@
   	box-sizing:border-box;  
 }
 
-html, body {
+html {
   position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body{
-	background-color: #F0E6DA;
 	height: 100%;
 }
 
 /* Boven gedeelte */
-header{
-		position: absolute;
-		width: 100%;
-		background-color: #F0E6DA;
-		position: fixed;
-		z-index: 50;
+.header{
+	width: 100%;
+	height: 3.5em;
+	position: fixed;
+	background-color: transparent;
+	-webkit-transition: all ease-out .5s;
+  	-moz-transition: all ease-out .5s;
+ 	-o-transition: all ease-out .5s;
+  	transition: all ease-out .5s;
+	z-index: 50;
+
 }
 
-header h2{
+.scroll{
+	background-color: #CADCE5;
+	box-shadow: 2px 2px 10px grey;
+}
+
+.header h2{
+	position: absolute;
+	left: 1em;
 	font-family: 'Fraunces', serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 2.3em;
 	text-align: center;
-	margin-top: 0.5em;
-	color: #CCA085;
+	margin-top: 0.15em;
+}
+
+.header h2 a{
+	text-decoration: none;
+	color: #142F3E;
+	cursor: pointer;
 }
 
 nav ul{
-	margin-top: 0.5em;
-	text-align: center;
-	color: #CCA085;
+	position: absolute;
+	right: 3.5em;
+	top: 0.65em;
+	color: #142F3E;
 }
 
-nav ul li{
+nav ul a{
 	display: inline;
 	font-family: 'Fraunces', serif;
 	font-weight: 600;
 	font-size: 1.7em;
 }
 
-nav ul li:first-of-type{
+nav ul a:first-of-type{
+	margin-right: 2em;
+	color: #142F3E;
+	text-decoration: none;
+}
+
+nav ul a:nth-of-type(2){
 	margin-right: 2em;
 }
 
-/* Main gedeelte */
+nav ul a:last-of-type{
+	color: #142F3E;
+	text-decoration: none;
+}
 
+header{
+	background-color: #CADCE5;
+	width: 100%;
+	height: 15em;
+}
+
+header h1{
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 5em;
+	font-size: 3em;
+}
+
+/* Main gedeelte */
 .tekstfotowerk div:first-of-type{
 	position: absolute;
-	top: 6em;
-	width: 100%;
+	top: 10.5em;
+	left: 2em;
 }
 
-.tekstfotowerk div:first-of-type h1{
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-}
-
-.tekstfotowerk div:nth-of-type(2){
-	position: absolute;
-	top: 6.3em;
-	left: 3.2em;
-}
-
-.tekstfotowerk div:nth-of-type(2) a{
+.tekstfotowerk div:first-of-type a{
 	font-family: 'Raleway', sans-serif;
 	color: black;
 	text-decoration: none;
 	font-size: 1.2em;
+	background-color: #e6c23a;
+	padding: 1em 1em;
+	border-radius: 0.8em;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.tekstfotowerk div:first-of-type a:hover{
+	box-shadow: 2px 2px 5px grey inset;
+	background-color: #F4521D;
 }
 
 .tekstenvak{
 	position: absolute;
-	top: 12em;
+	top: 16.5em;
 	left: 3em;
 }
 
@@ -88,16 +132,33 @@ nav ul li:first-of-type{
 	margin-bottom: 0.5em;
 }
 
+.tekstenvak h2:nth-of-type(2){
+	margin-top: 1.5em;
+}
+
+.tekstenvak h2:last-of-type{
+	margin-top: 1em;
+}
+
 .tekstenvak p{
 	font-family: 'Raleway', sans-serif;
-	width: 50%;
+	width: 55%;
+}
+
+.tekstenvak p:nth-of-type(2) span{
+	text-decoration: underline;
+}
+
+.tekstenvak p:last-of-type{
+	margin-bottom: 5em;
 }
 
 .detailsvak{
 	position: absolute;
-	top: 6.5em;
+	top: 17em;
 	right: 3em;
-	background-color: #B1BDB9;
+	background-color: #F4521D;
+	color: white;
 	width: 30%;
 	padding: 1em;
 	border-radius: 1em;
@@ -111,6 +172,18 @@ nav ul li:first-of-type{
 
 .detailsvak h3{
 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	margin-top: 0.4em;
+}
+
+.sys{
+	width: 40%;
+	margin-top: 1em;
+}
+
+.artikel{
+	width: 25%;
+	margin-top: -3em;
 }
 
 
