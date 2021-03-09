@@ -1,21 +1,15 @@
 @media (min-width: 360px) and (max-width: 845px){
 
 /*werkpaginas*/
-	.tekstenvak{
-		display: inline-block;
-		top: 35em;
-	}
 
 	.tekstenvak p{
-		width: 80%;
+		width: 90%;
 	}
 
-	.detailsvak{
-		width: 80%;
-		display: inline-block;
-		text-align: center;
-		left: 2.8em;
-		margin: 0 auto;
+	.beyondimg, .multideviceimg{
+		width: 70%;
+		top: 40em;
+		left: 3em;
 	}
 
 	.header h2{
@@ -33,9 +27,122 @@
 		justify-content: center;
 	}
 
+
 	nav ul a{
 		display: inline-block;
 	}
 
+	figure{
+	display: inline-block;
+	width: 100%;
 }
 
+figure:first-of-type{
+	float: left;
+	margin-top: 2.5em;
+	margin-bottom: 1em;
+}
+
+	figure:last-of-type{
+	float: left;
+	margin-bottom: 2em;
+}
+
+}
+
+@media (min-width: 950px) and (max-width: 1100px){
+
+	.werk{
+		display: grid;
+		width: 95%;
+		height: 75%;
+		grid-template-columns: repeat(3, 1fr);
+  		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 1em 1em;
+		margin: 0px auto;
+		margin-top: 20px;
+	}
+
+}
+
+@media (min-width: 550px) and (max-width: 949px){
+
+	.werk{
+		display: grid;
+		width: 95%;
+		height: 100%;
+		grid-template-columns: repeat(2, 2fr);
+  		grid-template-rows: 3fr;
+		grid-gap: 1em 1em;
+		margin: 0px auto;
+		margin-top: 20px;
+
+	}
+
+	footer{
+	background-color: #CADCE5;
+	height: 10em;
+	width: 100%;
+	position: absolute;
+	top: 125em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 3fr;
+  padding: 10px;
+  width: 90%;
+  grid-gap: 1em;
+  margin: 13em auto;
+}
+
+}
+
+@media (min-width: 375px) and (max-width: 549px){
+
+	.werk{
+		display: grid;
+		width: 95%;
+		height: 100%;
+		grid-template-columns: 1fr;
+  		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 1em 1em;
+		margin: 0px auto;
+		margin-top: 20px;
+
+	}
+
+	footer{
+	background-color: #CADCE5;
+	height: 10em;
+	width: 100%;
+	position: absolute;
+	top: 176em;
+}
+
+}
+
+
+@media (min-width: 1400px) and (max-width: 1600px){
+
+.achtergrond img{
+	width: 70%;
+}
+
+}
+
+@media (min-width: 1601px) and (max-width: 1900px){
+
+.achtergrond img{
+	width: 60%;
+}
+
+}
+
+@media (min-width: 1901px) and (max-width: 3000px){
+
+.achtergrond img{
+	width: 50%;
+}
+}

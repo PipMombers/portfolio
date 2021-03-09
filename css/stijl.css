@@ -82,13 +82,11 @@ nav ul a:hover{
 
 .achtergrond{
 	position: absolute;
-	left: -8.5em;
-	top: -8em;
 	z-index: 1;
 }
 
 .achtergrond img{
-	width: 70%;
+	width: 80%;
 }
 
 .informatie{
@@ -215,42 +213,38 @@ nav ul a:hover{
 }
 
 .werk-item:nth-of-type(3){
-	background-image: url(../images/slaap.jpg);
-}
-
-.werk-item:nth-of-type(4){
 	background-image: url(../images/csshuis.jpg);
 }
 
-.werk-item:nth-of-type(5){
+.werk-item:nth-of-type(4){
 	background-image: url(../images/npd.jpg);
 }
 
-.werk-item:nth-of-type(6){
+.werk-item:nth-of-type(5){
 	background-image: url(../images/artmatch.jpg);
 }
 
-.werk-item:nth-of-type(7){
+.werk-item:nth-of-type(6){
 	background-image: url(../images/vid.jpg);
 }
 
-.werk-item:nth-of-type(8){
+.werk-item:nth-of-type(7){
 	background-image: url(../images/budget.jpg);
 }
 
-.werk-item:nth-of-type(9){
+.werk-item:nth-of-type(8){
 	background-image: url(../images/multidevice.jpg);
 }
 
-.werk-item:nth-of-type(10){
+.werk-item:nth-of-type(9){
 	background-image: url(../images/lyrics.jpg);
 }
 
-.werk-item:nth-of-type(11){
+.werk-item:nth-of-type(10){
 	background-image: url(../images/ubicomp.jpg);
 }
 
-.werk-item:nth-of-type(12){
+.werk-item:nth-of-type(11){
 	background-image: url(../images/sys.jpg);
 }
 

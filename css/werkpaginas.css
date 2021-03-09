@@ -97,10 +97,22 @@ header h1{
 	font-size: 3em;
 }
 
+header h3{
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 5em;
+	font-size: 1em;
+	margin-top: -6.5em;
+	color: #F4521D;
+}
+
 /* Main gedeelte */
 .tekstfotowerk div:first-of-type{
 	position: absolute;
-	top: 10.5em;
+	top: 16.5em;
 	left: 2em;
 }
 
@@ -108,9 +120,9 @@ header h1{
 	font-family: 'Raleway', sans-serif;
 	color: black;
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1em;
 	background-color: #e6c23a;
-	padding: 1em 1em;
+	padding: 0.5em 1em;
 	border-radius: 0.8em;
 	cursor: pointer;
 	box-shadow: 5px 5px 5px grey;
@@ -121,59 +133,75 @@ header h1{
 	background-color: #F4521D;
 }
 
-.tekstenvak{
+.tekstenvak, .tekstenvaksrp, .tekstenvakgrapedistrict{
+	display: inline;
+	float: left;
 	position: absolute;
-	top: 16.5em;
+	top: 20em;
 	left: 3em;
 }
 
-.tekstenvak h2{
-	font-family: 'Fraunces', serif;
+.tekstenvak h2, .tekstenvaksrp h2, .tekstenvakgrapedistrict h2{
+	font-family: 'Raleway', sans-serif;
 	margin-bottom: 0.5em;
-}
-
-.tekstenvak h2:nth-of-type(2){
-	margin-top: 1.5em;
-}
-
-.tekstenvak h2:last-of-type{
-	margin-top: 1em;
+	color: #F4521D;
 }
 
 .tekstenvak p{
 	font-family: 'Raleway', sans-serif;
-	width: 55%;
+	width: 50%;
 }
 
-.tekstenvak p:nth-of-type(2) span{
-	text-decoration: underline;
-}
-
-.tekstenvak p:last-of-type{
-	margin-bottom: 5em;
-}
-
-.detailsvak{
-	position: absolute;
-	top: 17em;
-	right: 3em;
-	background-color: #F4521D;
-	color: white;
-	width: 30%;
-	padding: 1em;
-	border-radius: 1em;
-}
-
-.detailsvak h2{
-	font-family: 'Fraunces', serif;
-	text-align: center;
-	margin-bottom: 0.5em;
-}
-
-.detailsvak h3{
+.tekstenvaksrp p, .tekstenvakgrapedistrict p{
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	margin-top: 0.4em;
+	width: 90%;
+}
+
+.tekstenvak a{
+	color: #F4521D;
+}
+
+.tekstenvak p:nth-of-type(2), .tekstenvak p:nth-of-type(3){
+	margin-top: 1em;
+}
+
+.spanbeyond, .spanmultidevice, .spannpd, .spanubicomp{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.3em;
+	color: #F4521D;
+	margin-top: 1.5em;
+}
+
+.beyondimg, .ubicompimg, .passieimg, .sysimg, .ubicompimg, .vidimg, .budgetimg, .pietimg, .songtekstimg{
+	width: 35%;
+	position: absolute;
+	right: 3em;
+	top: 18em;
+}
+
+.sysimg img, .ubicompimg img, .vidimg img, .pietimg img, .songtekstimg img{
+	width: 100%;
+}
+
+.beyondimg img{
+	width: 100%;
+	border: 6px solid #CADCE5;
+	padding: 0 0 0 1em;
+}
+
+.multideviceimg{
+	width: 45%;
+	position: absolute;
+	right: 3em;
+	top: 18em;
+}
+
+.multideviceimg img{
+	width: 100%;
+}
+
+.titellink{
+	margin-top: 1em;
 }
 
 .sys{
@@ -186,5 +214,128 @@ header h1{
 	margin-top: -3em;
 }
 
+
+.andy{
+	width: 80%;
+}
+
+.srphuis{
+	margin-top: 3em;
+	width: 90%;
+}
+
+figure{
+	display: inline;
+	width: 50%;
+}
+
+figure:first-of-type{
+	float: left;
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+}
+
+figure:last-of-type{
+	float: right;
+	margin-bottom: 2em;
+}
+
+figcaption{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.15em;
+}
+
+.lytimg{
+	width: 80%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 5em;
+}
+
+.linkkunstenaar, .linkkunstliefhebber, .linkprototype, .linkdesignrationale{
+	font-weight: 700;
+}
+
+.linkkunstliefhebber, .linkdesignrationale{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 90%;
+  grid-gap: 1em;
+  margin: 13em auto;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 12em;
+}
+
+.grid-item:first-of-type{
+	background-image: url(../images/grapedistrict/herfstfoto.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(2){
+	background-image: url(../images/grapedistrict/kerstfoto.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(3){
+	background-image: url(../images/grapedistrict/limitededition2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(4){
+	background-image: url(../images/grapedistrict/Manifest.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(5){
+	background-image: url(../images/grapedistrict/sfeerfoto1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(6){
+	background-image: url(../images/grapedistrict/sfeerfoto2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(7){
+	background-image: url(../images/grapedistrict/sfeerfoto3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(8){
+	background-image: url(../images/grapedistrict/sfeerfoto4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:nth-of-type(9){
+	background-image: url(../images/grapedistrict/sfeerfoto5.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-item:last-of-type{
+	background-image: url(../images/grapedistrict/villavitas.jpg);
+	background-size: cover;
+	background-position: center;
+}
 
 
