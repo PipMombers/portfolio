@@ -74,11 +74,18 @@ nav ul a:first-of-type{
 
 nav ul a:nth-of-type(2){
 	margin-right: 2em;
+	color: #142F3E;
+	text-decoration: none;
 }
 
 nav ul a:last-of-type{
 	color: #142F3E;
 	text-decoration: none;
+}
+
+nav ul a:hover{
+	color: #F4521D;
+	text-decoration: underline;
 }
 
 header{
@@ -337,5 +344,7 @@ figcaption{
 	background-size: cover;
 	background-position: center;
 }
+
+
 
 

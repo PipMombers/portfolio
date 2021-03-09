@@ -181,14 +181,24 @@ nav ul li{
 	top: 40em;
 }
 
-
+.cvdocument{
+	visibility: hidden;
 
 }
 
+#contactlinkcv{
+	top: 41em;
+}
 
-
-
-
+.CVlink{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	position: absolute;
+	margin-top: 10em;
+	left: 1.3em;
+	color: #F4521D;
+	text-decoration: underline;
+}
 
 @media (min-width: 1400px) and (max-width: 1600px){
 
@@ -212,3 +222,42 @@ nav ul li{
 	width: 50%;
 }
 }
+
+
+@media (min-width: 1384px) and (max-width: 1680px){
+
+	#contactlinkcv{
+	top: 60em;
+}
+
+}
+
+@media (min-width: 1681px) and (max-width: 2000px){
+
+	#contactlinkcv{
+	top: 70em;
+}
+
+}
+
+@media (min-width: 2001px) and (max-width: 2300px){
+
+	#contactlinkcv{
+	top: 80em;
+}
+
+}
+
+@media (min-width: 2301px) and (max-width: 2500px){
+
+	#contactlinkcv{
+	top: 90em;
+}
+
+}
+
+
+
+
+
+
